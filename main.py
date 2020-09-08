@@ -5,7 +5,7 @@ student_data = list()
 repeat = 'y'
 while repeat.lower() == 'y':
     data = {}
-    data['name'] = input('/nEnter student\'s name: ')
+    data['name'] = input('\nEnter student\'s name: ')
     data['s_id'] = input('Enter student ID: ')
     count = int(input(f'Enter number of subjects chosen by student: '))
     for i in range(count):
@@ -18,6 +18,7 @@ while repeat.lower() == 'y':
 for i in student_data:
     calc_data = i.average()
     print(f'\nStudent\'s name: {i.name}')
+    print(f'\nStudent\'s ID: {i.s_id}')
     for j, k in vars(i).items():
         if type(k) is int:
             print(f'{i.name}\'s {j} marks: {k}')
