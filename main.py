@@ -18,7 +18,7 @@ while repeat.lower() == 'y':
 for i in student_data:
     calc_data = i.average()
     print(f'\nStudent\'s name: {i.name}')
-    print(f'\nStudent\'s ID: {i.s_id}')
+    print(f'Student\'s ID: {i.s_id}')
     for j, k in vars(i).items():
         if type(k) is int:
             print(f'{i.name}\'s {j} marks: {k}')
